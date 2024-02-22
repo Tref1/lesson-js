@@ -1,0 +1,49 @@
+
+
+
+
+.page {
+  display: flex;
+  justify-content: center;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+h2 {
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+strong {
+  color: #555;
+}
+
+ol {
+
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 20px;
+}

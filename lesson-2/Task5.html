@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>lesson-2</title>
+</head>
+<body>
+    <div class="page-block">
+        <h2>
+          Задача 5. Дано кількість секунд, що пройшла від початку доби. Визначити
+          скільки це годин і хвилин.
+        </h2>
+        <script>
+          var seconds = parseFloat(
+            prompt("Введіть кількість секунд від початку доби:")
+          );
+          var sum1 = Math.floor(seconds / 3600);
+          var sum2 = Math.floor((seconds % 3600) / 60);
+          document.write(`Годин: = ${sum1}<br>`);
+          document.write(`Хвилин: = ${sum2}`);
+        </script>
+      </div>
+</body>
+</html>

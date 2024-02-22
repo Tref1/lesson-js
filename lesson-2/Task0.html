@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>lesson-2</title>
+</head>
+<body>
+    <div class="page-block">
+      <h2>Задача 0. Обчислити значення виразів S1=a+12+b</h2>
+      <script>
+        var a = parseFloat(prompt("Введіть число:"));
+        var number2 = 12;
+        var b = parseFloat(prompt("Введіть число:"));
+        let s1 = a + number2 + b;
+        document.write(`s1 = ${s1}`);
+      </script>
+    </div>
+    <div class="page-block">
+      <h2>Задача 0. Обчислити значення виразів S2=a+b:2a</h2>
+      <script>
+        var a = parseFloat(prompt("Введіть число:"));
+        var b = parseFloat(prompt("Введіть число:"));
+        var number3 = 2;
+        let s2 = Math.sqrt(a + b) / (number3 * a);
+        document.write(`s2 = ${s2}`);
+      </script>
+    </div>
+    <div class="page-block">
+      <h2>Задача 0. Обчислити значення виразів S3=3(a+b)c</h2>
+      <script>
+        var a = parseFloat(prompt("Введіть число:"));
+        var b = parseFloat(prompt("Введіть число:"));
+        var c = parseFloat(prompt("Введіть число:"));
+        var s3 = ((a + b) * c) ** (1 / 3);
+        document.write(`s3 = ${s3}`);
+      </script>
+    </div>
+    <div class="page-block">
+      <h2>Задача 0. Обчислити значення виразів S4=sin⁡(a:-b)</h2>
+      <script>
+        var a = parseFloat(prompt("Введіть число:"));
+        var b = parseFloat(prompt("Введіть число:"));
+        var s4 = Math.sin(a / -b);
+        document.write(`s4 = ${s4}`);
+      </script>
+    </div>
+</body>
+</html>

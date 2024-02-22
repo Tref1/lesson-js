@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>lesson-2</title>
+</head>
+<body>
+    <div class="page-block">
+      <h2>Задача 7. Знайти суму випадкового номера місяця (від 1 до 12) та випадкового номера дня (від 0 до 6).</h2>
+      <script>
+                // Генерація випадкового номера місяця (від 1 до 12)
+        var randomMonth = Math.floor(Math.random() * 12) + 1;
+
+        // Генерація випадкового номера дня (від 0 до 6, де 0 - неділя, 1 - понеділок і т.д.)
+        var randomDay = Math.floor(Math.random() * 7);
+
+        // Знаходження суми
+        var sum = randomMonth + randomDay;
+
+        // Виведення результату
+        document.write(`Випадковий номер місяця: = ${randomMonth}<br>`);
+        document.write(`Випадковий номер дня: = ${randomDay}<br>`);
+        document.write(`Сума: = ${sum}`);
+      </script>
+    </div>
+</body>
+</html>

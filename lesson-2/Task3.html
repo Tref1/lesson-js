@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>lesson-2</title>
+</head>
+<body>
+        <div class="page-block">
+      <h2>
+        Задача 3. Дано вартість одиниці товару і кількість. Знайти загальну
+        вартість та ПДВ (5% від загальної вартості).
+      </h2>
+      <script>
+        var number1 = parseFloat(prompt("Введіть вартість одиниці товару:"));
+        var number2 = parseFloat(prompt("Введіть кількість товару:"));
+        var sum1 = number1 * number2;
+        var sum2 = 0.05 * sum1;
+        var sum3 = sum1 + sum2;
+        document.write(`Загальна вартість = ${sum1} грн<br>`);
+        document.write(`ПДВ (5%): = ${sum2} грн<br>`);
+        document.write(`Загальна вартість з ПДВ (5%): = ${sum3} грн`);
+      </script>
+    </div>
+</body>
+</html>

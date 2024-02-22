@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>lesson-2</title>
+</head>
+<body>
+    <div class="page-block">
+        <script>
+        var priceProduct1 = parseFloat(prompt('Нaпій 2 л Pepsi:', "51,90 грн/шт"));
+        var numProduct1 = parseInt(prompt("Кількість товару Pepsi:", "2"));
+  
+        var priceProduct2 = parseFloat(prompt("Засіб для миття посуду 1л Helper Max Ultra Power:", "79.30 грн/шт"));
+        var numProduct2 = parseInt(prompt("Кількість товару Helper Max Ultra Power:", "1"));
+  
+        var priceProduct3 = parseFloat(prompt("Батончик 112,5г Mars Snickers Super+1:", "39.50 грн/шт"));
+        var numProduct3 = parseInt(prompt("Кількість товару Helper Max Ultra Power:", "3"));
+  
+        //з ПДВ (5%)
+        var sum = 0.05;
+  
+        // Обчислення вартості кожного товару та загальної вартості
+        var totalCostProduct1 = priceProduct1 * numProduct1;
+        var totalCostProduct2 = priceProduct2 * numProduct2;
+        var totalCostProduct3 = priceProduct3 * numProduct3;
+  
+        // Обчислення загальної вартості без ПДВ
+        var grandTotalWithoutVAT = totalCostProduct1 + totalCostProduct2 + totalCostProduct3;
+  
+        // Обчислення ПДВ (5% від загальної вартості)
+        var VAT = grandTotalWithoutVAT * sum;
+  
+        // Обчислення загальної вартості з ПДВ
+        var grandTotalWithVAT = grandTotalWithoutVAT + VAT;
+  
+        // Виведення результату
+        document.write("<h2>Чек</h2>");
+        document.write("<table>");
+        document.write("<tr><th>Товар</th><th>Ціна за одиницю</th><th>Кількість</th><th>Загальна вартість</th></tr>");
+        document.write(`<tr><td>Напій 2 л Pepsi</td><td>${priceProduct1.toFixed(2)} грн/шт</td><td>${numProduct1}</td><td>${totalCostProduct1.toFixed(2)} грн</td></tr>`);
+        document.write(`<tr><td>Засіб для миття посуду 1л Helper Max Ultra Power</td><td>${priceProduct2.toFixed(2)} грн/шт</td><td>${numProduct2}</td><td>${totalCostProduct2.toFixed(2)} грн</td></tr>`);
+        document.write(`<tr><td>Батончик 112,5г Mars Snickers Super+1</td><td>${priceProduct3.toFixed(2)} грн/шт</td><td>${numProduct3}</td><td>${totalCostProduct3.toFixed(2)} грн</td></tr>`);
+        document.write(`<tr><td colspan='3'><strong>Загальна вартість без ПДВ</strong></td><td><strong>${grandTotalWithoutVAT.toFixed(2)} грн</strong></td></tr>`);
+        document.write(`<tr><td colspan='3'><strong>ПДВ (5%)</strong></td><td><strong>${VAT.toFixed(2)} грн</strong></td></tr>`);
+        document.write(`<tr><td colspan='3'><strong>Загальна вартість з ПДВ</strong></td><td><strong>${grandTotalWithVAT.toFixed(2)} грн</strong></td></tr>`);
+        document.write("</table>");
+        </script>
+      </div>
+</body>
+</html>
