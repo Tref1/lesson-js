@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Task2</title>
+  </head>
+  <body>
+    <div class="page">
+      <h1>lesson-3 (Task2)</h1>
+    </div>
+    <div class="page-block">
+      <h2>
+        З клавіатури вводиться ціна товару і кількість грошей. Якщо грошей не
+        вистачає то відмовляємо у покупці, інакше, якщо ще залишаються гроші, то
+        пропонуємо купити лотерею за 4 грн.
+      </h2>
+      <script>
+        let price = parseFloat(prompt("Введіть ціну товару:"));
+        let money = parseFloat(prompt("Введіть кількість грошей:"));
+        let change = money - price;
+        let buyLottery = false;
+
+        if (money < price) {
+          document.write("Вибачте, грошей не вистачає. Відмовляємо у покупці.");
+        } else {
+          if (change >= 4) {
+            buyLottery = confirm("Хочете придбати лотерею за 4 грн?");
+            if (buyLottery) {
+              // Віднімаємо тільки 4 грн від загального залишку, якщо купують квиток за 4 грн
+              change -= 4;
+            }
+          }
+
+          if (change > 0) {
+            document.write(
+              `Дякуємо за покупку! Залишок грошей: ${change.toFixed(2)} грн.`
+            );
+          }
+
+          if (buyLottery) {
+            document.write("<br>Ви придбали лотерею! Бажаємо вам удачі!");
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>

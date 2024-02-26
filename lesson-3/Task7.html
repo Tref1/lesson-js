@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Task7</title>
+  </head>
+  <body>
+    <div class="page">
+      <h1>lesson-3 (Task7)</h1>
+    </div>
+    <div class="page-block">
+        <h2>
+            З клавіатури вводиться номер місяця. Вивести до якої пори він відноситься
+        </h2>
+        <script>
+const monthNumber = parseInt(prompt("Введіть номер місяця (1-12):"));
+let result
+  switch (monthNumber) {
+        case 12:
+        case 1:
+        case 2:
+    result = `Місяць ${monthNumber} зима.`
+        break;
+        case 3:
+        case 4:
+        case 5:
+    result =`Місяць ${monthNumber} весна.`
+        break;
+        case 6:
+        case 7:
+        case 8:
+        result =`Місяць ${monthNumber} літо.`
+        break;
+        case 9:
+        case 10:
+        case 11:
+        result =`Місяць ${monthNumber} осінь.`;
+        break;
+        default:
+            result = 'Не коректний місяць'
+                break;
+  }
+  document.write(result);
+        </script>
+      </div>
+  </body>
+</html>

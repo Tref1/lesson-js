@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Task3</title>
+  </head>
+  <body>
+    <div class="page">
+      <h1>lesson-3 (Task3)</h1>
+    </div>
+    <div class="page-block">
+      <h2>
+        Випадковим чином генерується число від 1 до 5. Спробуйте вгадати число
+        за 2 спроби.
+      </h2>
+      <script>
+        let min = 1,
+          max = 5;
+          const randomNumber = Math.floor(Math.random() * (max-min + 1));
+          const num1 = parseInt(prompt("Спроба 1: Введіть число від 1 до 5"));
+          if (num1 === randomNumber) {
+              document.write(`Спроба 1: Ви вгадали! Загадане число було ${randomNumber}.<br>`);
+            } else {
+              document.write(`Спроба 1: Ви не вгадали. Загадане число було ${randomNumber}.<br>`);
+            }
+            const num2 = parseInt(prompt("Спроба 2: Введіть число від 1 до 5"));
+            if ( num2 === randomNumber) {
+              document.write(` Спроба 2: Ви вгадали! Загадане число було ${randomNumber}.`);
+            } else {
+              document.write(` Спроба 2: Ви не вгадали. Загадане число було ${randomNumber}.`);
+            }
+      </script>
+    </div>
+  </body>
+</html>

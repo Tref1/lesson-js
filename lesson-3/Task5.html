@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Task5</title>
+  </head>
+  <body>
+    <div class="page">
+      <h1>lesson-3 (Task5)</h1>
+    </div>
+    <div class="page-block">
+        <h2>
+            З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль). Вивести на екран назву транспортного 
+        </h2>
+        <script>
+          const categories = prompt("Введіть котигорію водія (A,B,C):");
+          let result
+          const upperCaseCategories = categories.toUpperCase();
+          switch (upperCaseCategories) {
+            case 'A' : result = 'Категорії водія А-мотоцикл'
+                break;
+            case 'B' : result = 'Категорії водія В-легковий автомобіль'
+                break;
+            case 'C' : result = 'Категорії водія С-вантажний автомобіль'
+                break;
+            default:
+            result = 'Не коректна категорія'
+                break;
+          }
+          document.write(result);
+        </script>
+      </div>
+  </body>
+</html>

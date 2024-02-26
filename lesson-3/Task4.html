@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Task4</title>
+  </head>
+  <body>
+    <div class="page">
+      <h1>lesson-3 (Task4)</h1>
+    </div>
+    <div class="page-block">
+        <h2>
+            З клавіатури вводиться вік людини. Вивести на екран ким він є (дитиною у садочку, школярем, студентом, працівником, пенсіонером).
+        </h2>
+        <script>
+          let years = parseFloat(prompt("Введіть вік людини:"));
+          const num1 = 6;
+          const num2 = 18;
+          const num3 = 23;
+          const num4 = 64;
+            if (years <= num1 )
+            document.write(`Вам ${years} років Ви ходите у садолчок`);
+             else if (years <= num2)
+             document.write(`Вам ${years} років Ви школяр`);
+            else if (years <= num3)
+            document.write(`Вам ${years} років Ви студенет`);
+            else if (years <= num4)
+            document.write(`Вам ${years} років Ви працівник`);
+            else if (years > num4)
+            document.write(`Вам ${years} років Ви пенсіонер`);
+        </script>
+      </div>
+  </body>
+</html>
