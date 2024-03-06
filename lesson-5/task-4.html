@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Task4</title>
+  </head>
+  <body>
+    <div class="page">
+      <h1>lesson-5 (Task4)</h1>
+    </div>
+    <div class="page-block">
+      <h2>
+        Задача 1. Вивести з використанням циклів маркований список з випадковими числами (1-100).
+         Кількість випадкових чисел вводиться користувачем. Приклад: 12, 31, 34, 51.
+      </h2>
+      <script>
+        document.write(`<ul>`)
+              for (let col = 1; col <= 5; col++) {
+                let numeric = parseInt(prompt(`Введіть число від 1 до 100 (спроба ${col + 0}):`));
+                if (100 < numeric)  {
+                  document.write(` <li>не коректне число</li>`)
+                } 
+                else {
+                  document.write(`<li>${numeric}</li>`)
+                }
+              }
+          document.write(`</ul>`)
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Task6</title>
+  </head>
+  <body>
+    <div class="page">
+      <h1>lesson-5 (Task6)</h1>
+    </div>
+    <div class="page-block">
+      <h2>
+        Задача 3. Вивести таблицю з одним рядком і  7 стовпцями.
+      </h2>
+      <script>
+        document.write(`<table border="2px">`)
+            //   for (let col = 1; col <= 1; col++) { }
+                // let numeric = parseInt(prompt(`Введіть число від 1 до 100 (спроба ${col + 0}):`));
+                document.write(`<tr>`)
+                    for (let num = 1; num < 7; num++) {
+                        document.write(`<td border="2px">${num + 0}</td>`)
+                        
+                    }
+                document.write(`</tr>`)
+             
+              
+          document.write(`</table>`)
+      </script>
+    </div>
+  </body>
+</html>
