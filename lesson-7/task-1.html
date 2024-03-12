@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Task1</title>
+  </head>
+  <body>
+    <div class="page">
+      <h1>lesson-7 (Task1)</h1>
+    </div>
+    <div class="page-block">
+      <h2>
+        Задача 0. Створити функцію, яка за номером місяця повертає пору року, до якої відноситься цей місяць.
+      </h2>
+      <script>
+        function season (monthNumber) {
+            if (monthNumber === 12 || monthNumber === 1 || monthNumber === 2) return 'зима';
+            else if (monthNumber === 3 || monthNumber === 4 || monthNumber === 5) return 'весна';
+            else if (monthNumber === 6 || monthNumber === 7 || monthNumber === 8) return 'літо';
+            else if (monthNumber === 9 || monthNumber === 10 || monthNumber === 11) return 'осінь';
+            else if (monthNumber > 12) return 'Некоректний місяць';
+            else return 'Некоректний місяць';
+        }
+        const monthNumber = parseInt(prompt("Введіть номер місяця (1-12):"))
+        const mont = season(monthNumber)
+        document.write(`Зараз ${mont}`);
+      </script>
+      
+    </div>
+  </body>
+</html>

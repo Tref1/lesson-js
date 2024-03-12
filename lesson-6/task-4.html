@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Task-4</title>
+  </head>
+  <body>
+    <div class="page">
+      <h1>lesson-6 (Task-4)</h1>
+    </div>
+    <div class="page-block">
+        <h2>
+            6. Інвестор вклав S тис. грн на 20 років під 20% річних, податок складає 5% від суми прибутку. Визначити за допомогою циклів суму, яку він одержить.
+          </h2>
+        
+          <script>
+        let s = parseInt(prompt(`Введіть суму яку ви хочете покласти на 20 років`));
+        const annualInterestRate = 20; // 20%
+        const years = 20; // Кількість років
+        const taxRate = 5; // Податок у відсотках
+
+        for (let i = 1; i <= years; i++) {
+            const profit = s * (annualInterestRate / 100);
+            const tax = profit * (taxRate / 100);
+            s = s + profit - tax;
+        }
+document.write(`Сума після ${years} років (з урахуванням податку): ${s.toFixed(2)} грн`);
+          </script>
+    </div>
+  </body>
+</html>

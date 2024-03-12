@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Task-5</title>
+  </head>
+  <body>
+    <div class="page">
+      <h1>lesson-6 (Task-5)</h1>
+    </div>
+    <div class="page-block">
+        <h2>
+            7. Інвестор вклав S тис. грн на 20 років під 20% річних, а потім на 17 років під 27% річних. Визначити за допомогою циклів суму, яку він одержить.
+          </h2>
+          <script>
+            let initialSum = parseInt(prompt(`Введіть початкову суму інвестиції (тис. грн):`));
+            const annualInterestRate1 = 20; // 20%
+            const years1 = 20;
+            for (let i = 1; i <= years1; i++) {
+                initialSum *= (1 + annualInterestRate1 / 100);
+            }
+            const annualInterestRate2 = 27; // 27%
+            const years2 = 17;
+            for (let i = 1; i <= years2; i++) {
+                initialSum *= (1 + annualInterestRate2 / 100);
+            }
+            document.write(`Сума після ${years1 + years2} років: ${initialSum.toFixed(2)} тис. грн`);
+          </script>
+    </div>
+  </body>
+</html>

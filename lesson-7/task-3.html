@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Task3</title>
+  </head>
+  <body>
+    <div class="page">
+      <h1>lesson-7 (Task3)</h1>
+    </div>
+    <div class="page-block">
+      <h2>
+        Задача 2. Створити функцію, яка за номером дня дозволяє з’ясувати чи є цей день робочим.
+      </h2>
+      <script>
+            function getNumberDay(day) {
+                if (day < 5) {
+                    return 'робочий';
+                } else if (day >= 5 && day <= 7) {
+                    return 'вихідний';
+                } else {
+                    return 'Некоректний номер дня тижня';
+                }
+            }
+
+            const day = parseInt(prompt("Введіть номер дня тижня (1-7):"));
+
+            if (day >= 1 && day <= 7) {
+                const dayType = getNumberDay(day);
+                document.write(`День тижня:  ${dayType}`);
+            } else {
+                document.write('Некоректний номер дня тижня');
+            }
+      </script>
+      
+    </div>
+  </body>
+</html>

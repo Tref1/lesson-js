@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Task5</title>
+  </head>
+  <body>
+    <div class="page">
+      <h1>lesson-7 (Task5)</h1>
+    </div>
+    <div class="page-block">
+      <h2>
+        Задача 4. Створити функцію, яка для 3 заданих чисел знаходить одночасно декілька результатів: кількість парних, кількість додатних, кількість більших за 100.
+      </h2>
+      <script>
+        function analyzeNumbers(num1, num2, num3) {
+            let evenCount = 0;
+            let positiveCount = 0;
+            let greaterThan100Count = 0;
+            function isEven(num) {
+                return num % 2 === 0;
+            }
+
+            function isPositive(num) {
+                return num > 0;
+            }
+
+            function isGreaterThan100(num) {
+                return num > 100;
+            }
+            if (isEven(num1)) evenCount++;
+            if (isEven(num2)) evenCount++;
+            if (isEven(num3)) evenCount++;
+
+            if (isPositive(num1)) positiveCount++;
+            if (isPositive(num2)) positiveCount++;
+            if (isPositive(num3)) positiveCount++;
+
+            if (isGreaterThan100(num1)) greaterThan100Count++;
+            if (isGreaterThan100(num2)) greaterThan100Count++;
+            if (isGreaterThan100(num3)) greaterThan100Count++;
+            return {
+                evenCount: evenCount,
+                positiveCount: positiveCount,
+                greaterThan100Count: greaterThan100Count
+            };
+        }
+
+        const number1 = parseInt(prompt("Введіть перше число:"));
+        const number2 = parseInt(prompt("Введіть друге число:"));
+        const number3 = parseInt(prompt("Введіть третє число:"));
+
+        const analysisResult = analyzeNumbers(number1, number2, number3);
+
+        document.write(`Кількість парних чисел: ${analysisResult.evenCount}<br>`);
+        document.write(`Кількість додатних чисел: ${analysisResult.positiveCount}<br>`);
+        document.write(`Кількість чисел більших за 100: ${analysisResult.greaterThan100Count}`);
+
+      </script>
+      
+    </div>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Task-2</title>
+  </head>
+  <body>
+    <div class="page">
+      <h1>lesson-6 (Task-2)</h1>
+    </div>
+    <div class="page-block">
+      <h2>
+        1. Використовуючи цикли вивести на екран 20 символів «о».
+      </h2>
+      <script>
+        for (let i = 0; i < 20; i++) {
+            document.write('о');
+        }
+      </script>
+            <h2>
+                2. Відобразити трикутник за допомогою символів «о»
+        <ul>
+            <li>о</li>
+            <li>оо</li>
+            <li>ооо</li>
+            <li>оооо</li>
+            <li>ооооо</li>
+            <li>оооооо</li>
+            <li>ооооооо</li>
+        </ul>
+              </h2>
+              <script>
+                const numRows = 7;
+                for (let i = 0; i <= numRows; i++) {
+                    for (let j = 0; j < i; j++) {
+                        document.write('о');
+                    }
+                    document.write('<br>');
+                }
+              </script>
+
+
+<h2>
+    2.1. Відобразити трикутник за допомогою символів «о»
+<ul>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;о</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;оо</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;ооо</li>
+<li>&nbsp;&nbsp;&nbsp;оооо</li>
+<li>&nbsp;&nbsp;ооооо</li>
+<li>&nbsp;оооооо</li>
+<li>ооооооо</li>
+</ul>
+  </h2>
+  <script>
+const numRows1 = 7;
+
+for (let i = 1; i <= numRows1; i++) {
+for (let j = 0; j < numRows1 - i; j++) {
+    document.write('&nbsp;');
+}
+for (let k = 0; k < i; k++) {
+    document.write('о');
+}
+document.write('<br>');
+}
+
+  </script>
+
+
+<h2>
+    3. Відобразити трикутник за допомогою символів «о»
+
+<ul>
+<li>ооооооо</li>
+<li>&nbsp;оооооо</li>
+<li>&nbsp;&nbsp;ооооо</li>
+<li>&nbsp;&nbsp;&nbsp;оооо</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;ооо</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;оо</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;о</li>
+</ul>
+  </h2>
+  <script>
+const numRows2 = 12;
+
+
+for (let i = numRows2; i >= 1; i--) {
+
+    for (let j = 0; j < numRows - i; j++) {
+        document.write('&nbsp;');
+    }
+    for (let k = 0; k < i * 2 - 1; k++) {
+        document.write('о');
+    }
+    document.write('<br>');
+}
+document.write('<br>');
+
+  </script>
+    </div>
+  </body>
+</html>

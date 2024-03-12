@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Task1</title>
+  </head>
+  <body>
+    <div class="page">
+      <h1>lesson-6 (Task1)</h1>
+    </div>
+    <div class="page-block">
+      <h2>
+        0. Вивести на екран
+      </h2>
+      <script>
+        const startCharCode = 'A'.charCodeAt(0);
+        const numRows = 5;
+        const numLetters = 5;
+
+        for (let i = 0; i < numRows; i++) {
+            for (let j = 0; j < numLetters; j++) {
+                const currentChar = String.fromCharCode(startCharCode + i + j);
+                document.write(currentChar + ' ');
+            }
+            document.write('<br>');
+        }
+
+      </script>
+    </div>
+  </body>
+</html>
